@@ -22,7 +22,7 @@ struct DoubleKeyboardModifier: ViewModifier {
                 #if os(iOS)
                     .background {
                         Color(
-                            color.secondarySystemBackground
+                            UIColor.secondarySystemBackground
                         )
                         .ignoresSafeArea(.all)
                     }
