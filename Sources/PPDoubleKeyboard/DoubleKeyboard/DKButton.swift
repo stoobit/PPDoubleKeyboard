@@ -21,11 +21,12 @@ struct DKButton: View {
             Group {
                 if title == "delete.left.fill" {
                     Image(systemName: title)
+                        .imageScale(.large)
                 } else {
                     Text(title)
+                        .font(.title3.bold())
                 }
             }
-            .font(.title3.bold())
             .foregroundStyle(Color.white)
             .frame(width: 60, height: 40)
             .background(
