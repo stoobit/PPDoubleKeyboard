@@ -30,7 +30,7 @@ struct DKButton: View {
             .foregroundStyle(Color.white)
             .frame(width: 60, height: 40)
             .background(
-                title == "delete.left.fill" || title == "," ? Color.secondary : Color.accentColor
+                title == "delete.left.fill" || title == "," ? Color.gray : Color.accentColor
             )
             .clipShape(
                 .rect(
