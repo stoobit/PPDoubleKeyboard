@@ -19,6 +19,14 @@ struct DoubleKeyboardModifier: ViewModifier {
                 DKView(value: $value)
                     .padding()
                     .frame(width: 221, height: 340)
+                #if os(iOS)
+                    .background {
+                        Color(
+                            color.secondarySystemBackground
+                        )
+                        .ignoresSafeArea(.all)
+                    }
+                #endif
                     .presentationCompactAdaptation(.popover)
             })
     }
