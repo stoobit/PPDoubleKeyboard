@@ -79,6 +79,8 @@ struct DKView: View {
             }
         }
         .onAppear {
+            value = value.rounded(toPlaces: 1)
+            
             if value.fraction == 0 {
                 string = String(Int(value))
             } else {
