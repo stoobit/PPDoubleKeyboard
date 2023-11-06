@@ -64,7 +64,7 @@ struct DKView: View {
             }
             
             HStack {
-                DKButton(title: ",", position: .bottomLeading) {
+                DKButton(title: ".", position: .bottomLeading) {
                     if string.contains(".") == false {
                         add(".")
                     }
@@ -102,7 +102,7 @@ struct DKView: View {
         
         let tValue = Double(tString) ?? 0
         
-        if display.contains(",") && display.last == "0" && display.count != 1 {
+        if display.contains(".") && display.last == "0" && display.count != 1 {
             return
         }
         
@@ -122,9 +122,7 @@ struct DKView: View {
         }
         
         if string.last == "." {
-            disp = disp + ","
-        } else {
-            disp = disp.replacingOccurrences(of: ".", with: ",")
+            disp = disp + "."
         }
         
         return disp
