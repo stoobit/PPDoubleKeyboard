@@ -18,7 +18,7 @@ struct DoubleKeyboardModifier: ViewModifier {
             .popover(isPresented: $isPresented, content: {
                 DKView(value: $value)
                     .padding()
-                    .frame(width: 221, height: 340)
+                    .frame(width: 228, height: 320)
                 #if os(iOS)
                     .background {
                         Color(

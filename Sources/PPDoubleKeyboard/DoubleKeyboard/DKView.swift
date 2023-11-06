@@ -65,7 +65,9 @@ struct DKView: View {
             
             HStack {
                 DKButton(title: ",", position: .bottomLeading) {
-                    add(".")
+                    if string.contains(".") == false {
+                        add(".")
+                    }
                 }
                 
                 DKButton(title: "0", position: .center) {
